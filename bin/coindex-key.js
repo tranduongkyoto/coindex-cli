@@ -3,7 +3,7 @@ const key = require('../commands/key');
 
 program
   .command('set')
-  .description('Set API Ket -- Get at https://nomics.com')
+  .description('Set API Ket -- Get at https://coinmarketcap.com/api/')
   .action(key.set);
 
 program.command('show').description('Show API Key').action(key.show);
