@@ -7,6 +7,7 @@ const check = {
       keyManager = new KeyManager();
       const key = keyManager.getKey();
       const api = new CryptoAPI(key);
+      console.log('test');
       const priceOutputData = await api.getPriceData(cmd.coin, cmd.cur);
       console.log(priceOutputData);
     } catch (err) {
