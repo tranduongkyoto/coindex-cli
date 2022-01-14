@@ -7,7 +7,7 @@ program
   .option(
     '--coin <type>',
     'Add specific coin types in CSV format',
-    'BTC,ETH,DOT'
+    'BTC ETH DOT'
   )
   .option('--cur <currency>', 'Change the currency', 'USD')
   .action((cmd) => check.price(cmd));
